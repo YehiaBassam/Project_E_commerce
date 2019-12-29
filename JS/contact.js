@@ -47,4 +47,5 @@ myForm.addEventListener("submit", function send(e) {
     .catch(error => {
       console.log("Error message:", error);
     });
+    myForm.reset();
 });
