@@ -49,7 +49,7 @@
       Ipsum has been the industry's standard dummy text ever </p>
 
     <!-- the form -->
-    <form  id="myForm" >
+    <form  id="myForm" method="POST"  >
       <div class="row">
         <!-- name -->
         <div class="col-md-6 mb-5">
@@ -87,7 +87,7 @@
             <label for="comment">Message*</label>
             <textarea class="form-control" rows="7" id="msg" name="msg" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary" id="btn">Send Message</button> &nbsp<span  role="alert" id="successTxt"></span>
+          <button type="submit" name="submit" class="btn btn-primary" id="btn">Send Message</button> &nbsp<span  role="alert" id="successTxt"></span>
         </div>
       </div>
       <!--row close-->

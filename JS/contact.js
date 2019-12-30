@@ -1,4 +1,3 @@
-// let btn = document.querySelector("#btn");
 const myForm = document.getElementById("myForm");
 
 myForm.addEventListener("submit", function send(e) {
@@ -39,13 +38,36 @@ myForm.addEventListener("submit", function send(e) {
     .then(response => response.json())
     .then(data => {
       console.log("Success::>", data);
-    
+
       let spanTxt = document.getElementById("successTxt");
-      spanTxt.innerHTML=data.message;
-      spanTxt.classList.add("alert","alert-success");
+      spanTxt.innerHTML = data.message;
+      spanTxt.classList.add("alert", "alert-success");
     })
     .catch(error => {
       console.log("Error message:", error);
     });
+
+// SENDING TO PHP
+
+  fetch("formData.php", {
+    method: "POST",
+     body: dataAsJson,
+     headers: {
+      "Content-Type": "application/json; charset=UTF-8"
+    }
+   
+  })
+    .then(response => {
+      return response.text();
+    })
+    .then(Json => {
+      console.log("SENT TO PHP "+ Json);
+    })
+    .catch(error => {
+      console.log("Error message::>", error);
+    });
+
     myForm.reset();
+    // window.location.href = "formData.php";
+
 });
