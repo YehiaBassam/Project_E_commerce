@@ -67,7 +67,7 @@ for (var key in dataFromLocal)
     $(input_quan).on("change", function() {
         cart = JSON.parse(localStorage.getItem('ShoppingCart'))
         num = $(this).val();
-
+        location.reload()
         cart[id] =
             {
             id:id,

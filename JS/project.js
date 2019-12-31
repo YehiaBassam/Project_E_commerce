@@ -76,7 +76,7 @@ function Display (data)
         quantity.setAttribute('type','hidden')
         quantity.setAttribute('class','w-50')
         addcart.setAttribute('class','btn-danger')
-        icon.setAttribute('src','iconfinder_ecommerce-28_4707193.png')
+        icon.setAttribute('src','imgs/iconfinder_ecommerce-28_4707193.png')
         price.classList.add('text-primary')
         price.innerHTML = data[i].Price + "  " + data[i].CurrencyCode
         $(addcart).append(icon)
@@ -89,11 +89,6 @@ function Display (data)
 
         $(row).append(item)
         $('body').append(row)
-
-
-        item_View.addEventListener('click', function (){
-            console.log(data[i].ProductId)
-        });
 
         $(addcart).one('click',function(){
             let id = data[i].ProductId;
