@@ -124,8 +124,7 @@ function Display (data)
 
             addcart.disabled = true;
             addcart.setAttribute('class','btn-secondary');
-            window.location.reload();
-
+           
         })
         
 
