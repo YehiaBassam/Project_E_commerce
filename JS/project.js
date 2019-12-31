@@ -123,7 +123,8 @@ function Display (data)
             localStorage.setItem('ShoppingCart',JSON.stringify(cart))
 
             addcart.disabled = true;
-            addcart.setAttribute('class','btn-secondary')
+            addcart.setAttribute('class','btn-secondary');
+            window.location.reload();
 
         })
         
