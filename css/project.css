@@ -2,6 +2,7 @@
 {
     background-color: brown;
     border-radius: 40%;
+    transition: .4s;
 }
 
 .navbar-brand
@@ -18,17 +19,17 @@
 
 .fly
 {
-    width: 200px;
+    width: 220px;
     height: 50px;
-    border-top-left-radius: 30%;
-    border-top-right-radius: 30%;
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%; 
-    border-right: 30%;
-    border-left: 30%;
+    border-radius: 50px;
     background-color: darkviolet;
     position: fixed;
-    top: 50%;
+    top: 25%;
     right: 0;
     z-index: 300;
+}
+
+#view_Container
+{
+    margin-top: 110px;
 }

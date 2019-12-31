@@ -12,12 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" ){
     fclose($fileOpen);
 
     echo "<h1>Data saved </h1>";
- 
 
 }
-
-
-
-
 
 ?>

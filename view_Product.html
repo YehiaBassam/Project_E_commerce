@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/project.css">
 
-    <title>E-Commerce</title>
+    <title>View Product</title>
 </head>
-
 <body>
-  
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top ">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <a class="navbar-brand text-white" href="#">E-Commerce</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,24 +34,36 @@
         </div>
       </nav>
 
-      <div class="fly d-flex justify-content-end">
-        <div class="quantity_Home rounded-pill h-50 bg-info d-flex justify-content-center align-self-center" style="width: 15% !important;"> 
-          <span id="totalquantity" class="font-weight-bold text-warning" >0</span>
-        </div>
-        <span class="font-weight-bold text-warning d-flex justify-content-center align-self-center "></span><span id="totalprice" class="font-weight-bold text-warning d-flex justify-content-center align-self-center ml-2" >0</span>
-        <a href="Cart.html" class="mt-auto mb-auto"> <img src="iconfinder_03_Trolley_1871438.png" class="img-fluid"> </a>
-          <h5 class="text-warning mt-auto mb-auto mr-2">CheckOut</h5>
-      </div>
 
-    <div class="container mycontainer">
-        <div class="row" id="all"></div>
+<div class="container" id="view_Container">
+    <div class="row">
+        <div class="col-md-4 ">
+            <img id="view_img"  class="img-fluid">
+        </div>
+        <div class="col-md-4">
+            <h4 class="text-muted" style="margin-top: 60px;">Accessories</h4>
+            <h5 id="view_h5"></h5>
+            <p id="view_Description"></p>
+        </div>
+        <div class="col-md-4 ">
+            <div class="card border-secondary mb-3 pt-4 pr-5 pl-5" style="max-width: 18rem;">
+                <div class="card-header bg-transparent border-secondary text-muted">Avalability : <span class="text-success font-weight-bolder">in stock</span></div>
+                <div class="card-body ">
+                  <h3 class="card-title" id="view_h3"></h3>
+                  <p class="card-text">Quantitiy :</p>
+                  <input class="form-control input-group-text bg-white" id="view_Input" style="border-radius: 20px;" min="1" type="number" placeholder="0">
+                </div>
+                <a href="Cart.html" class="btn btn-secondary btn-lg  mb-4" style="border-radius: 20px;"  role="button" id="add_Cart"><img src="iconfinder_03_Trolley_1871438.png" class="mr-2 mb-1">Add to Cart</a>
+            </div>
+        </div>
     </div>
+</div>
 
 
     <script src="JS/jquery-3.4.1.js" ></script>
     <script src="JS/popper.min.js" ></script>
     <script src="JS/bootstrap.js" ></script>
-    <script src="JS/project.js"></script>
+    <script src="JS/view_Product.js"></script>
 
 </body>
 </html>
